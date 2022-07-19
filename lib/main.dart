@@ -60,8 +60,8 @@ class _BumbleBeeFileVideoState extends State<_BumbleBeeFileVideo> {
   }
 
   Future<File> _downloadFile(String url, String name) async {
-    // final String documentDirPath = (await path_provider.getApplicationSupportDirectory()).path;
-    final String documentDirPath = (await path_provider.getApplicationDocumentsDirectory()).path;
+    final String documentDirPath = (await path_provider.getApplicationSupportDirectory()).path;
+    // final String documentDirPath = (await path_provider.getApplicationDocumentsDirectory()).path;
 
     final String path = '$documentDirPath/$name';
 
